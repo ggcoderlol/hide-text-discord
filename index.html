@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Discord Text Transformer</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Easy formatting for spoofing text on Discord using a bug." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>Discord Text Spoofer <a href="https://coderinventor.github.io/social/" style="color: white;">&#60;3</a></h1>
+    <textarea id="fakemsg" onkeyup="makeSpoof(document.getElementById('fakemsg').value, document.getElementById('realmsg').value)" placeholder="Message people see" autofocus></textarea>
+    <textarea id="realmsg" onkeyup="makeSpoof(document.getElementById('fakemsg').value, document.getElementById('realmsg').value)" placeholder="The real message people don't see"></textarea>
+    <br><label for="spoof">Result below - <span style="color: lightblue; cursor: pointer;" onclick="makeSpoof('reset', 'reset')">Reset</span></label><br><br>
+    <textarea id="spoofed" style="width: 70%; height: 100px;" readonly></textarea>
+    <button onclick="copy()">Copy</button>
+    <p id="msg"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
