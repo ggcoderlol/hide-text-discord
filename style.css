@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Whitney Book";
+  src: url("e8acd7d9bf6207f99350ca9f9e23b168.woff") format('woff');
+}
+* {
+  font-family: Whitney Book;
+}
+h1, label {
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  background-color: #36393f;
+  color: #dcddde;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+textarea {
+  display: block;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(114, 118, 125, 0.3);
+  color: hsla(0, 0%, 100%, 0.7);
+  font: inherit;
+  margin-bottom: 20px;
+  height: 1em;
+  line-height: 1;
+  width: 50%;
+}
+button {
+  display: block;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: rgba(114, 118, 125, 0.3);
+  outline: none;
+  width: 15%;
+  cursor: pointer;
+}
+button:active {
+  background-color: rgba(85, 88, 94, 0.3);
+}
+textarea::placeholder {
+  color: hsla(0, 0%, 100%, 0.3);
+}
+textarea:focus {
+  outline: none; /* a crime */
+}
